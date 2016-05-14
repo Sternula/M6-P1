@@ -4,10 +4,10 @@ library(markdown)
 source("tabPanels.R", local=TRUE)
 
 shinyUI(
-    navbarPage("Problem Case Title",
+    navbarPage("Apparent Competition",
     tabPanel("Introduction",
              withMathJax(),
-             includeMarkdown("Introduction.md"),
+             includeHTML("Introduction.html"),
              value = "tP0"),
     tabPanel("Model", tP1, value = "tP1"), # end tabPanel "tp1"
     id = "panels",
